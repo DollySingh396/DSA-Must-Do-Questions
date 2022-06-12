@@ -1,6 +1,6 @@
 /** 
  * This approach will not work if array has duplicate values bcz 
- * theni t will be difficult to decide in which half of array
+ * then it will be difficult to decide in which half of array
  * the key will be present.
  */
 
