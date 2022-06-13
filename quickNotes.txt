@@ -1,0 +1,2 @@
+Implement Quick Sort with random pivot
+and then try to do Kth smallest element with random pivot on gfgs platform

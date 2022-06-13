@@ -2,7 +2,9 @@
  *  This approach uses sort so TC O(NlogN) and SC - O(1)
  *  
  *  Other approaches are also possible like MaxHeap it will take TC O(n + k*logn)
- *  nd many other approaches like quick select
+ *  nd many other approaches like quick select 
+ *  quick select is the best approach 
+ *  implementing Kth Smallest Element using Quick select
  */
 var findKthLargest = function(nums, k) {
     
