@@ -5,7 +5,7 @@ This is to learn DSA from scratch.
 
 Over a period of 6 months, I will do multiple DSA questions which are must-do, to crack top product based comoanies.
 
-I will be doing questions in the most optimised way possible and also write the comments to make more readable and explainable.
+I will be doing questions in the most optimised way possible and also write the comments to make it more readable and explainable.
 Time complexity and Space Complexity will also be mentioned for each problem solution.
 
  I will be covering all the below topics:
