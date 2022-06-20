@@ -53,8 +53,8 @@ function charachterReplacemnet(s, k){
      return maxLength;
 }
 /**
- *  TC - O(N)
- *  SC - O(N) map to store string characters, worst case N characters
+ *  TC - O(26*N) - O(N) // 26 alphabets
+ *  SC - O(26) map to store string characters, worst case N characters
  */
 var s = "BAAA";
 var k = 0;
