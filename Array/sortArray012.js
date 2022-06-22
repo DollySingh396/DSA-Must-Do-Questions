@@ -1,3 +1,4 @@
+// Approach One
 function sort012(arr, N) {
     
     /**
@@ -32,6 +33,45 @@ function sort012(arr, N) {
 
     return arr;
 }
+
+/**
+ *  Approach Two
+ */
+function sort012(arr, N){
+
+    // initializing variables
+        var low = 0;
+        var mid = 0;
+        var high = N-1;
+
+    // traverse the array till mid is <= high
+        while( mid <= high){
+
+            // if mid value is 0
+            // then swap with value at low
+            // and low++ , mid++
+            if( arr[mid] === 0){
+                    [ arr[low], arr[mid] ] = [ arr[mid], arr[low] ]
+                    low++;
+                    mid++
+                }
+
+            // value is 1 then do nothing simply mid++
+            else if( arr[mid] === 1 ) mid++;
+
+            // value is 2 then swap the value with high index and do high--\
+            // high-- is so that the last index value is not traversed again
+            else{
+                [ arr[high], arr[mid] ] = [ arr[mid], arr[high]]
+                    high--;
+            }
+         
+    }
+ return arr
+}
+
+
+
 /**
  *   TC - O(N),
  *   SC - O(1)
