@@ -1,31 +1,43 @@
+// function check(A,B,N){
+//     // code here
+
+//     // object to store the count of each array element
+//     // here one element can occur more than one time
+//     var obj = {};
+
+//     // traverse A to get count of all elements of A
+//     for( let i = 0; i < N; i++){
+//         if(obj[A[i]]) obj[A[i]] += 1;
+//         else obj[A[i]] = 1;
+//     }
+
+//     // traverse B , if same element is found decrease count from object
+//     // otherwise for new element initilaise with -1
+//     //
+//     for( let i = 0; i < N; i++){
+//         if(obj[B[i]]) obj[B[i]] -= 1;
+//         else obj[A[i]] = -1;
+//     }
+
+//     // checking that each key of object has 0 value
+//     // if yes return 1 else 0
+//     var res = Object.keys(obj).every( key => obj[key] == 0) ? 1 : 0
+
+//     return res;
+
+// }
+
 function check(A,B,N){
-    // code here
+    var temp = 0;
 
-    // object to store the count of each array element
-    // here one element can occur more than one time
-    var obj = {};
+    for(let i = 0; i < N; i++) temp ^= A[i]
 
-    // traverse A to get count of all elements of A
-    for( let i = 0; i < N; i++){
-        if(obj[A[i]]) obj[A[i]] += 1;
-        else obj[A[i]] = 1;
-    }
+    for(let i = 0; i < N; i++) temp ^= B[i]
 
-    // traverse B , if same element is found decrease count from object
-    // otherwise for new element initilaise with -1
-    //
-    for( let i = 0; i < N; i++){
-        if(obj[B[i]]) obj[B[i]] -= 1;
-        else obj[A[i]] = -1;
-    }
-
-    // checking that each key of object has 0 value
-    // if yes return 1 else 0
-    var res = Object.keys(obj).every( key => obj[key] == 0) ? 1 : 0
-
-    return res;
-
+    return temp
+    //return (temp ?  !(true) : (!false) )
 }
+
 /**
  *  TC - O(N)
  *  SC - O(N)

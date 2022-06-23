@@ -51,7 +51,60 @@ repeatedNumber = function(A){
              //console.log(numberMap);
              return [repeat, missing];
     }
-var A = [ 2, 2]
+
+    // Approach Two - Using XOR
+// repeatedNumber = function(A){
+
+//     var temp = 0;
+//     for( let i = 0; i < A.length; i++){
+//         temp ^= A[i];
+//     }
+//     console.log(`value of temp is ${temp}`);
+
+//     for( let i = 1; i <= A.length; i++){
+//         temp ^= i;
+//     }
+//     console.log(`value of temp is ${temp}`);
+
+//     var rsb = (temp ^ -temp);
+//     var x = 0;
+//     var y = 0;
+//     console.log(`value of rsb is ${rsb}`);
+
+//     for( let i = 0; i < A.length; i++){
+        
+//         if( (A[i] & rsb) == 0){
+//             x ^= A[i]
+//         }
+//         else y ^= A[i];
+//     }
+
+//     console.log(`value of x is ${x}`);
+//     console.log(`value of y is ${y}`);
+
+//     for( let i = 1; i <= A.length; i++){
+//         if( (i & rsb) == 0){
+//             x ^= i
+//         }
+//         else y ^= i;
+//     }
+//     console.log(`!!!!!!!!value of x is ${x}`);
+//     console.log(`!!!!!!!!value of y is ${y}`);
+    
+//     for( let i = 0; i < A.length; i++){
+        
+//         if(A[i]  == x){
+//             console.log(`Missing no is ${y}`);
+//             console.log(`Repeating no is ${x}`);
+//         }
+//         else if(A[i]  == y){
+//             console.log(`Missing no is ${x}`);
+//             console.log(`Repeating no is ${y}`);
+//         }
+//     }
+// }
+
+var A = [1, 2, 2, 4]
 console.log(repeatedNumber(A))
 
 

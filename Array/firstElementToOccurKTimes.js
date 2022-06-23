@@ -29,7 +29,8 @@ function firstElementKTime(arr,n,k){
             if( k === 1) return arr[i];
         }
     }
-
+    
+    console.log(obj)
     // if the element doesnot occur k times then simple return -1
     return -1;
 }
@@ -40,5 +41,5 @@ function firstElementKTime(arr,n,k){
 
 var arr = [1, 7, 4, 7, 4, 8, 7];
 var n = arr.length;
-var k = 4;
+var k = 2;
 console.log(firstElementKTime(arr, n, k))
