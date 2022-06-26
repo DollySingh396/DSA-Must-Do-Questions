@@ -36,8 +36,9 @@ function findSwapValues(A, n, B, m) {
         // so this value of B can't be used in A to make sum of A and B equal
         // so increment i
         else if(newSumA > newSumB) i++;
-        // if sum of B is greater than sum of A, it means new value in B can't be used and increase j
-        // i will remain same j will increase so that 
+        // if sum of B is greater than sum of A, 
+        // it means that after swap watever value of B is used in A is not large enough to make sum of A equal to sum of B
+        // so increment B pointer so that A's sum afetr swap can increase
         else j++;
     }        
 return -1;
