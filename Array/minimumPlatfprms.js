@@ -21,7 +21,9 @@ function findPlatform(arr, dep, n) {
         // if the arrival time is before the departure of train
         // then we will need a new platform for the coming train
         // so increase the platform count
-        if (arr[i] < dep[j]) {
+
+        // need to check arrival time is before or same as departure time
+        if (arr[i] <= dep[j]) {
             count++;
         }
         // if the train arrives after the departure of previous train
