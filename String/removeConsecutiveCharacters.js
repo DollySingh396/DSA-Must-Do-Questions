@@ -6,8 +6,8 @@ function removeConsecutiveCharacter(s) {
      *  if length of string is 1 then there will be no consecutive duplicates
      *  so return the original string
      */
-    if (s.length === 0) return c;
-    if (s.length === 1) return '';
+    if (s.length === 1) return c;
+    if (s.length === 0) return '';
 
     /**
      *  initialising a new string with the initial charachter of string s
